@@ -18,6 +18,13 @@
         */
        $("button").on("click", sayHello);
 
+       // Set the border radius attribute to 5px
+       $("button").css("border-radius", "5px");
+
+       // Set multiple attributes at the same time to selected elements
+       $("button").css({"background-color":"goldenrod", "color":"white" })
+
+
        function sayHello(){
             alert("Hello!");
        }
