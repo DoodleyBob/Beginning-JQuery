@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrowText function - BellRinger 04/02/2025</title>
+</head>
+<body>
+    <p style="font-size: 10px;">This Text should Grow</p>
+
+    <script>
+        var p = document.getElementsTagName("p");
+        var text = 10;
+        var timer = setInterval(growText, 1000);
+
+        function growText() {
+            text += 2;
+            p.style.fontSize = text + "px";
+            if (text == 20) {
+                clearInterval(timer);
+            }
+        }
+    </script>
+</body>
+</html>
